@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0-rc.1.24452.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+        <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="9.1.2" />
+        <PackageReference Include="Microsoft.Orleans.Server" Version="9.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OrleansNorthwind.Grains\OrleansNorthwind.Grains.csproj" />
+        <ProjectReference Include="..\OrleansNorthwind.Persistence\OrleansNorthwind.Persistence.csproj" />
+        <ProjectReference Include="..\OrleansNorthwind.Service\OrleansNorthwind.Service.csproj" />
+    </ItemGroup>
+
+</Project>
