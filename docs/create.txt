@@ -1,0 +1,9 @@
+dotnet new sln -n OrleansNorthwind
+
+dotnet new classlib -n OrleansNorthwind.Grains
+dotnet new classlib -n OrleansNorthwind.Models 
+dotnet new classlib -n OrleansNorthwind.Service 
+dotnet new classlib -n OrleansNorthwind.Persistence
+dotnet new webapi -n OrleansNorthwind.API 
+
+dotnet sln add OrleansNorthwind.Grains OrleansNorthwind.Models OrleansNorthwind.Service OrleansNorthwind.API OrleansNorthwind.Persistence
